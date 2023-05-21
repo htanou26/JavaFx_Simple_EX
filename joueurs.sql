@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 21 mai 2023 à 03:07
+-- Généré le : dim. 21 mai 2023 à 03:12
 -- Version du serveur : 10.4.21-MariaDB
 -- Version de PHP : 8.0.12
 
@@ -55,6 +55,31 @@ INSERT INTO `joueur` (`id`, `numJoueur`, `poste`, `nom`, `prenom`, `nbBut`, `nbE
 (11, 26, 'Attaquant', 'Kali', 'David', 50, 2, 'JZK', 'Calom', 1),
 (12, 4, 'Attaquant', 'Williams', 'David', 5, 15, 'Roma', 'Angleterre', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateur`
+--
+
+CREATE TABLE `utilisateur` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
+  `genre` varchar(255) NOT NULL,
+  `motDePasse` varchar(255) NOT NULL,
+  `estConnecte` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`id`, `email`, `nom`, `prenom`, `pseudo`, `genre`, `motDePasse`, `estConnecte`) VALUES
+(1, 'kali@kali.com', 'Kali', 'Kali', 'KaliNO', '', '553225726ea919e57e3d61bcaf4a1b24', 0),
+(2, 'vil@turn.com', 'Vil', 'Turn', 'VT', '', '47acd14735103aa3216884843ff8b484', 0);
+
 --
 -- Index pour les tables déchargées
 --
@@ -67,6 +92,12 @@ ALTER TABLE `joueur`
   ADD KEY `utilisateurId` (`utilisateurId`);
 
 --
+-- Index pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -75,6 +106,12 @@ ALTER TABLE `joueur`
 --
 ALTER TABLE `joueur`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Contraintes pour les tables déchargées
