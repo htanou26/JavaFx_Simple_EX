@@ -1,0 +1,101 @@
+[
+  {
+    "id": 3,
+    "numJoueur": 17,
+    "poste": "AIG",
+    "nom": "Mane",
+    "prenom": "Sadio",
+    "nbBut": 17,
+    "nbExperience": 11,
+    "club": "Bayern Munich",
+    "equipeNational": "Senegal"
+  },
+  {
+    "id": 4,
+    "numJoueur": 8,
+    "poste": "MO",
+    "nom": "Fernandes",
+    "prenom": "Bruno",
+    "nbBut": 9,
+    "nbExperience": 11,
+    "club": "Manchester United",
+    "equipeNational": "Portugal"
+  },
+  {
+    "id": 5,
+    "numJoueur": 12,
+    "poste": "AID",
+    "nom": "Kolmuani",
+    "prenom": "Randal",
+    "nbBut": 3,
+    "nbExperience": 2,
+    "club": "Lerverkusen",
+    "equipeNational": "France"
+  },
+  {
+    "id": 7,
+    "numJoueur": 1,
+    "poste": "Gardien",
+    "nom": "Smith",
+    "prenom": "John",
+    "nbBut": 0,
+    "nbExperience": 5,
+    "club": "Arsenal",
+    "equipeNational": "Angleterre"
+  },
+  {
+    "id": 8,
+    "numJoueur": 2,
+    "poste": "Défenseur",
+    "nom": "Jones",
+    "prenom": "Michael",
+    "nbBut": 2,
+    "nbExperience": 10,
+    "club": "Manchester United",
+    "equipeNational": "Angleterre"
+  },
+  {
+    "id": 9,
+    "numJoueur": 3,
+    "poste": "Milieu",
+    "nom": "Johnson",
+    "prenom": "Emma",
+    "nbBut": 3,
+    "nbExperience": 8,
+    "club": "Liverpool",
+    "equipeNational": "Angleterre"
+  },
+  {
+    "id": 10,
+    "numJoueur": 4,
+    "poste": "Attaquant",
+    "nom": "Williams",
+    "prenom": "David",
+    "nbBut": 5,
+    "nbExperience": 15,
+    "club": "Chelsea",
+    "equipeNational": "Angleterre"
+  },
+  {
+    "id": 11,
+    "numJoueur": 26,
+    "poste": "Attaquant",
+    "nom": "Kali",
+    "prenom": "David",
+    "nbBut": 50,
+    "nbExperience": 2,
+    "club": "JZK",
+    "equipeNational": "Calom"
+  },
+  {
+    "id": 12,
+    "numJoueur": 4,
+    "poste": "Attaquant",
+    "nom": "Williams",
+    "prenom": "David",
+    "nbBut": 5,
+    "nbExperience": 15,
+    "club": "Roma",
+    "equipeNational": "Angleterre"
+  }
+]

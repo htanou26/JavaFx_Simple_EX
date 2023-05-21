@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.joueur.JoueurController">
+   <MenuBar GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2">
+      <Menu text="Extraction">
+         <MenuItem text="Exporter en JSON" onAction="#exporterEnJSON"/>
+         <MenuItem text="Exporter en Excel" onAction="#exporterEnExcel"/>
+         <MenuItem text="Exporter en Texte" onAction="#exporterEnTexte"/>
+      </Menu>
+   </MenuBar>
+
+   <Label text="Numéro de joueur:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+   <TextField fx:id="numJoueurField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+   <Label text="Poste:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+   <TextField fx:id="posteField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+   <Label text="Nom:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+   <TextField fx:id="nomField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+   <Label text="Prénom:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+   <TextField fx:id="prenomField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+   <Label text="Nombre de buts:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+   <TextField fx:id="nbButField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+   <Label text="Nombre d'expérience:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+   <TextField fx:id="nbExperienceField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+   <Label text="Club:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+   <TextField fx:id="clubField" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+   <Label text="Équipe nationale:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+   <TextField fx:id="equipeNationalField" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+
+   <HBox GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="2" spacing="10">
+      <Button text="Ajouter" onAction="#handleAjouter"/>
+      <Button text="Modifier" onAction="#handleModifier"/>
+      <Button text="Supprimer" onAction="#handleSupprimer"/>
+      <Button text="Actualiser" onAction="#handleActualiser"/>
+      <Button text="Sélectionner" onAction="#clearFields" />
+   </HBox>
+
+   <HBox GridPane.rowIndex="10" GridPane.columnIndex="0" GridPane.columnSpan="2" spacing="10">
+      <Label text="Importer fichier:"/>
+      <Button text="Texte" onAction="#importerFichierTexte"/>
+      <Button text="JSON" onAction="#importerFichierJSON"/>
+      <Button text="Excel" onAction="#importerFichierExcel"/>
+   </HBox>
+
+   <TableView fx:id="joueurTable" GridPane.rowIndex="11" GridPane.columnIndex="0" GridPane.columnSpan="2">
+      <columns>
+         <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+         <TableColumn fx:id="numJoueurColumn" text="Numéro de joueur" prefWidth="100"/>
+         <TableColumn fx:id="posteColumn" text="Poste" prefWidth="100"/>
+         <TableColumn fx:id="nomColumn" text="Nom" prefWidth="100"/>
+         <TableColumn fx:id="prenomColumn" text="Prénom" prefWidth="100"/>
+         <TableColumn fx:id="nbButColumn" text="Nombre de buts" prefWidth="100"/>
+         <TableColumn fx:id="nbExperienceColumn" text="Nombre d'expérience" prefWidth="120"/>
+         <TableColumn fx:id="clubColumn" text="Club" prefWidth="100"/>
+         <TableColumn fx:id="equipeNationalColumn" text="Équipe nationale" prefWidth="120"/>
+      </columns>
+   </TableView>
+
+   <Label fx:id="messageLabel" GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+</GridPane>
